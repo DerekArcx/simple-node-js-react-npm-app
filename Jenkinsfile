@@ -7,11 +7,10 @@ pipeline {
             }
         }
 
-        stage('Run') {
+        stage('Test') {
             steps {
-                sh 'echo Hello arcx'
+                sh './jenkins/scripts/test.sh'
             }
-            
         }
     }
 }
