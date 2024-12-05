@@ -8,7 +8,10 @@ pipeline {
         }
 
         stage('Run') {
-            sh 'echo Hello arcx'
+            steps {
+                sh 'echo Hello arcx'
+            }
+            
         }
     }
 }
